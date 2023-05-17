@@ -9,3 +9,20 @@ menu.onclick = () => {
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
+
+
+// 검색 부분
+window.onscroll = () => {
+    // ele.classList.remove(String)
+    // 클래스의 속성값을 체크하여 제거한다. 없는 경우 무시
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+
+document.querySelector("#search-icon").onclick = () => {
+    document.querySelector("#search-form").classList.toggle('active');
+}
+
+document.querySelector("#search-close").onclick = () => {
+    document.querySelector("#search-form").classList.remove('active');
+}
