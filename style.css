@@ -105,6 +105,7 @@ header .icons #menu-bars {
     align-items: center;
     justify-content: center;
     padding: 0.1rem;
+    z-index: 1004;
 }
 
 #search-form.active {
@@ -158,6 +159,107 @@ section {
     padding: 2rem 9%;
 }
 
+section:nth-child(even) {
+    background: #fff;
+}
+
+.hot-drink .container .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 내부의 children 요소들이 일정한 간격으로 떨어져 위치할 수 있도록 사용하는 스타일 속성 */
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.hot-drink .container .slide .content {
+    flex: 1 1 40rem;
+}
+
+.hot-drink .container .slide .image {
+    flex: 1 1 9rem;
+}
+
+.hot-drink .container .slide .image img{
+    flex: 100%;
+}
+
+.hot-drink .container .slide .content span{
+    color: var(--wine);
+    font-size: 2.5rem;
+}
+
+.hot-drink .container .slide .content h3{
+    color: var(--black);
+    font-size: 7rem;
+}
+
+.hot-drink .container .slide .content p{
+    color: var(--light-color);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--green);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover {
+    background: var(--menu);
+    /* letter-spacing: 글자 간격 */
+    letter-spacing: .1rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--green);
+}
+
+.sub-title {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.title {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.Recipe .box-container {
+    /* 
+        Grid는 두 방향(가로-세로) 레이아웃 시스템 (2차원)
+    */
+    display: grid;
+    /*
+        https://studiomeal.com/archives/533
+    */
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.Recipe .box-container .box {
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}   
+
 
 
 
@@ -186,6 +288,10 @@ section {
 
     header {
         padding: 1rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
     }
 }
 
@@ -229,6 +335,10 @@ section {
     #search-form #search-input {
         width: 90%;
         margin: 0 1rem;
+    }
+
+    .hot-drink .container .slide .content h3{
+        font-size: 5rem;
     }
 }
 

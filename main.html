@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonjouryu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 헤더 영역 -->
     <header>
         <a href="#" class="logo"><i class="fa-solid fa-wine-glass"></i>bonjouryu</a>
-
         <nav class="navbar">
             <a href="#home">home</a>
             <a href="#Rwine">redWine</a>
@@ -22,7 +23,6 @@
             <a href="#review">review</a>
             <a href="#order">order</a>
         </nav>
-
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
@@ -31,70 +31,198 @@
         </div>
     </header>
 
+    <!-- 검색 영역 -->
     <form id="search-form">
         <input type="search" placeholder="찾을 제품 검색하세요." id="search-input">
         <label for="search-input" class="fas fa-search"></label>
         <i class="fas fa-times" id="search-close"></i>
     </form>
 
+    <!-- 슬라이드 배너 영역-->
     <section id="hot-drink" class="hot-drink">
-        <div class="container">
-            <div class="wrapper">
-                <div class="slide">
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Hot RedWine</span>
                         <h3>Textbook</h3>
                         <p>Napa Cabernet Sauvignon</p>
-                        <a href="#" class="buy-btn"></a>
+                        <a href="#" class="btn">Buy Now</a>
                     </div>
-                    <div class="img">
+                    <div class="image">
                         <img src="./img/textbook.png" alt="텍스트북">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Hot WhiteWine</span>
                         <h3>Cloudy Bay</h3>
                         <p>Sauvignon Blanc</p>
-                        <a href="#" class="buy-btn"></a>
+                        <a href="#" class="btn">Buy Now</a>
                     </div>
-                    <div class="img">
-                        <img src="./img/클라우디베이.png" alt="클라우디 베이">
+                    <div class="image">
+                        <img style="height: 56rem;" src="./img/클라우디베이.png" alt="클라우디 베이">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Hot Champagne</span>
                         <h3>Moet & Chandon</h3>
                         <p>Imperial</p>
-                        <a href="#" class="buy-btn"></a>
+                        <a href="#" class="btn">Buy Now</a>
                     </div>
-                    <div class="img">
-                        <img src="./img/moet.png" alt="모엣샹동">
+                    <div class="image">
+                        <img style="height: 56rem;" src="./img/moet.png" alt="모엣샹동">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Hot Whisky</span>
                         <h3>The BALVENIE</h3>
                         <p>DoubleWood 12Y</p>
-                        <a href="#" class="buy-btn"></a>
+                        <a href="#" class="btn">Buy Now</a>
                     </div>
-                    <div class="img">
-                        <img src="./img/bal.jpg" alt="발베니12">
+                    <div class="image">
+                        <img style="height: 56rem;" src="./img/bal.jpg" alt="발베니12">
                     </div>
                 </div>
-                <div class="slide">
+                <div class="swiper-slide slide">
                     <div class="content">
                         <span>Hot Jin</span>
                         <h3>Hendrick's</h3>
                         <p>Hendrick's Gin</p>
-                        <a href="#" class="buy-btn"></a>
+                        <a href="#" class="btn">Buy Now</a>
                     </div>
-                    <div class="img">
-                        <img src="./img/HANDRICKS.png" alt="핸드릭스">
+                    <div class="image">
+                        <img style="height: 60rem;" src="./img/HANDRICKS.png" alt="핸드릭스">
                     </div>
                 </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--  -->
+    <section id="Recipe" class="Recipe">
+        <h3 class="sub-title">Trendy Recipe</h3>
+        <h1 class="title">Popular Recipe</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/진토닉.jpg" alt="진토닉" style="height: 30rem;">
+                <h3>Tasty Drink</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span>진토닉</span>
+                <a href="#" class="btn">보러가기</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/프로슈토.jpg" alt="프로슈토 멜론" style="width: 35rem;">
+                <h3>Tasty Plate</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-alt"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span>프로슈토 멜론</span>
+                <a href="#" class="btn">보러가기</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/플레터.jpg" alt="치즈플레터" style="width: 35rem;">
+                <h3>Tasty Plate</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span>치즈플레터</span>
+                <a href="#" class="btn">보러가기</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/죠니하이볼.jpg" alt="죠니하이볼" style="height: 30rem;">
+                <h3>Tasty Drink</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span>죠니하이볼</span>
+                <a href="#" class="btn">보러가기</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/mal.jpg" alt="말리부하이볼" style="height: 30rem;">
+                <h3>Tasty Drink</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-alt"></i>
+                </div>
+                <span>말리부하이볼</span>
+                <a href="#" class="btn">보러가기</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/하몽플레터.jpg" alt="하몽플레터" style="width: 35rem;">
+                <h3>Tasty Drink</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span>하몽플레터</span>
+                <a href="#" class="btn">보러가기</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="./img/bom.png" alt="봄베이하이볼" style="height: 30rem;">
+                <h3>Tasty Drink</h3>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <span>봄베이하이볼</span>
+                <a href="#" class="btn">보러가기</a>
             </div>
         </div>
     </section>
@@ -104,8 +232,7 @@
 
 
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/2c3a34c36f.js" crossorigin="anonymous"></script>
 <script src="./main.js"></script>
     

@@ -26,3 +26,19 @@ document.querySelector("#search-icon").onclick = () => {
 document.querySelector("#search-close").onclick = () => {
     document.querySelector("#search-form").classList.remove('active');
 }
+
+// 슬라이드 배너 부분
+var swiper = new Swiper(".container", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    // 루프(Loop)는 코드 블록을 여러 번 실행 할 수 있게 해준다.
+    loop:true,
+  });
