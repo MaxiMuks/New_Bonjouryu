@@ -6,7 +6,7 @@
     --wine:#760c0c;
     --menu:#8A0808;
     --light-color:#666;
-    --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+    --box-shadow:0.5rem 0.5rem rgba(0,0,0,.1);
 }
 
 * {
@@ -224,7 +224,7 @@ section:nth-child(even) {
 
 .sub-title {
     text-align: center;
-    color: var(--green);
+    color: var(--light-color);
     font-size: 2rem;
     padding-top: 1rem;
 }
@@ -238,14 +238,14 @@ section:nth-child(even) {
 }
 
 .Recipe .box-container {
-    /* 
+/*     
         Grid는 두 방향(가로-세로) 레이아웃 시스템 (2차원)
     */
     display: grid;
-    /*
+/*     
         https://studiomeal.com/archives/533
     */
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -259,6 +259,118 @@ section:nth-child(even) {
     overflow: hidden;
     text-align: center;
 }   
+
+.Recipe .box-container .box .fa-heart,
+.Recipe .box-container .box .fa-eye {
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.Recipe .box-container .box .fa-heart {
+    right: -15rem;
+}
+
+.Recipe .box-container .box .fa-eye {
+    left: -15rem;
+}
+
+.Recipe .box-container .box:hover .fa-heart {
+    right: 1.5rem;
+}
+
+.Recipe .box-container .box:hover .fa-eye {
+    left: 1.5rem;
+}
+
+
+.Recipe .box-container .box .fa-heart:hover,
+.Recipe .box-container .box .fa-eye:hover {
+    background: var(--menu);
+    color: #fff;
+}
+
+.Recipe-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--green);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.Recipe-btn:hover {
+    background: var(--menu);
+    /* letter-spacing: 글자 간격 */
+    letter-spacing: .1rem;
+}
+
+.Recipe .box-container .box img {
+    height: 17rem;
+    margin: 1rem 0;
+}
+
+.Recipe .box-container .box h3 {
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.Recipe .box-container .box .stars {
+    padding: 1rem 0;
+}
+
+.Recipe .box-container .box .stars i {
+    font-size: 1.7 rem;
+    color: gold;
+}
+
+/* .Recipe .box-container .box span {
+    color: var(--light-color);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,6 +405,7 @@ section:nth-child(even) {
     section {
         padding: 2rem;
     }
+    
 }
 
 @media(max-width:768px) {
@@ -346,5 +459,10 @@ section:nth-child(even) {
 
     html {
         font-size: 50%;
+    }
+
+    .Recipe .box-container .box img {
+        height: 17rem;
+        margin: 1rem 0;
     }
 }
