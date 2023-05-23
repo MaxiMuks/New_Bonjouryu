@@ -339,20 +339,115 @@ section:nth-child(even) {
     font-size: 2rem;
 } */
 
+.About .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
 
+.About .row .image {
+   flex: 1 1 45rem; 
+}
 
+.About .row .image img {
+   width: 100%;
+}
 
+.About .row .about-contents {
+    flex: 1 1 45rem; 
+}
 
+.About .row .about-contents h3 {
+    color: var(--black);
+    font-size: 4rem;
+    padding: .5rem 0;
+}
 
+.About .row .about-contents p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+}
 
+.About .row .about-contents .icons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
 
+.About .row .about-contents .icons-container .icons {
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgb(0, 0, 0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+}
 
+.About .row .about-contents .icons-container .icons i {
+    font-size: 2.5rem;
+    color: var(--green);
+}
 
+.About .row .about-contents .icons-container .icons span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
 
+.Review .slide {
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgb(0, 0, 0,.2);
+    border-radius: .5rem;
+    position: relative;
+}
 
+.Review .slide .fa-quote-right {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
 
+.Review .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
 
+.Review .slide .user img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    /* object-fit: cover - 내용이 종횡비를 유지하면서 정의된 너비와 높이를 가득 채울때까지 확대된다 */
+    object-fit: cover;
+}
 
+.Review .slide .user h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.Review .slide .user i {
+    font-size: 1.3rem;
+    color: gold;
+}
+
+.Review .slide p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+
+}
 
 
 

@@ -42,3 +42,28 @@ var swiper = new Swiper(".container", {
     // 루프(Loop)는 코드 블록을 여러 번 실행 할 수 있게 해준다.
     loop:true,
   });
+
+  // 리뷰
+  var swiper = new Swiper(".review-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+    },
+    loop:true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
