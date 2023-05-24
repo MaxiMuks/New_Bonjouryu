@@ -10,14 +10,31 @@ menu.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+// let section = document.querySelectorAll('section');
+// let navLinks = document.querySelectorAll('header .navbar a');
+
 
 // 검색 부분
-window.onscroll = () => {
-    // ele.classList.remove(String)
-    // 클래스의 속성값을 체크하여 제거한다. 없는 경우 무시
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-}
+// window.onscroll = () => {
+//     // ele.classList.remove(String)
+//     // 클래스의 속성값을 체크하여 제거한다. 없는 경우 무시
+//     menu.classList.remove('fa-times');
+//     navbar.classList.remove('active');
+
+//     section.forEach(sec => {
+//       let top = window.scrollY;
+//       let height = sec.offsetHeight;
+//       let offset = sec.offsetTop - 150;
+//       let id = sec.getAttribute('id');
+
+//       if(top => offset && top < offset + height) {
+//           navLinks.forEach(links => {
+//             links.classList.remove('active');
+//             document.querySelector('header .navbar a[href*=' + id +']').classList.add('active');
+//         });
+//       }
+//     });
+// }
 
 document.querySelector("#search-icon").onclick = () => {
     document.querySelector("#search-form").classList.toggle('active');
@@ -67,3 +84,13 @@ var swiper = new Swiper(".container", {
       },
     },
   });
+
+  function loader() {
+    document.querySelector('.loader-container').classList.add('fade-out');
+  }
+
+  function fadeOut() {
+    setInterval(loader, 3000);
+  }
+
+  window.onload = fadeOut;
