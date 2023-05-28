@@ -4,6 +4,6 @@
 #### ◇ 이번에는 bootstrap활용 없이 구현
 #### ◆ https://swiperjs.com/ 참고로 배너 및 리뷰부분 슬라이더 구현
 #### ◇ Refessh - loader 구현
-#### ◆ 전 버전보다 hover 이벤트 많이 활용
+#### ◆ 리뉴얼사이트인 만큼 이벤트 많이 활용
 # 도메인주소
 #### https://curious-granita-a3c989.netlify.app/
