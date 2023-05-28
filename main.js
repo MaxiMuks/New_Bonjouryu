@@ -85,12 +85,18 @@ var swiper = new Swiper(".container", {
     },
   });
 
-  function loader() {
-    document.querySelector('.loader-container').classList.add('fade-out');
-  }
+const loader = document.querySelector('.loader-container');
 
-  function fadeOut() {
-    setInterval(loader, 3000);
-  }
+window.addEventListener('load', () => {
+    loader.style.display = 'none';
+});
 
-  window.onload = fadeOut;
+  // function loader() {
+  //   document.querySelector('.loader-container').classList.add('fade-out');
+  // }
+
+  // function fadeOut() {
+  //   setInterval(loader, 3000);
+  // }
+
+  // window.onload = fadeOut;

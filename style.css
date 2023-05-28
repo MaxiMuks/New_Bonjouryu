@@ -549,7 +549,7 @@ section:nth-child(even) {
     height: 100%;
     width: 100%;
     z-index: 10000;
-    background: #fff;
+    background: #fff no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
